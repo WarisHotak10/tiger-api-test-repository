@@ -1,6 +1,7 @@
 # 1) Generate a valid token and verify it with below requirement.
 # test api endpoint "/api/token/verify" with valid token.
-# Status should be 200 – bad request and response is true.
+# Status should be 200 ï¿½ bad request and response is true.
+@Verifyingtest
 Feature: Security test. verify token test.
 
   Scenario: Verify valid token
@@ -20,7 +21,7 @@ Feature: Security test. verify token test.
 
   # 3) test api endpoint "/api/token/verify" with invalid token.
   # Note: since it's invalid token it can be any random string. you don't need to generate a new token
-  # Status should be 400 – bad request and response should be TOKEN_EXPIRED
+  # Status should be 400 ï¿½ bad request and response should be TOKEN_EXPIRED
   Scenario: test api endpoint with invalid token
     Given url "https://tek-insurance-api.azurewebsites.net"
     And path "/api/token/verify"
